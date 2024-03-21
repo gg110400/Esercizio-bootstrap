@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Hero</title> 
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+   
+</head>
+<body>
+  <!--Qui inizia l'header con la nav bar-->
+  <header class="p-3 mb-3 border-bottom bg-light fixed-top ">
+    <div class="container justify-content-between">
+      <div class="d-flex flex-wrap align-items-center justify-content-lg-start">
+        <a href="#" class="d-flex align-items-center mb-2 mb-lg-0 link-light text-decoration-none position-absolute start-0 pe-4 ps-2" >
+          <h1 class="fs-3 px-4 pt-1 text-black">Music Hero <i class="fa-solid fa-volume-high ps-1 text-black" style="color: #ffffff;"></i></h1>
+        </a>
+
+        <ul class=" nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 mx-auto">
+          <li><a href="#home" class="nav-link px-3 link-dark fs-5">Home</a></li>
+          <li><a href="#about" class="nav-link px-4 link-dark fs-5">About</a></li>
+          <li><a href="#contacts" class="nav-link px-4 link-dark fs-5">Contacts</a></li>
+          <li><a href="#products" class="nav-link px-4 link-dark fs-5">Products</a></li>
+          <li><a href="#subscriptions" class="nav-link px-4 link-dark fs-5 ">Subscriptions</a></li>
+          <li><a href="checkout.html" class="nav-link px-4 link-dark fs-5 "><i class="fa-solid fa-cart-shopping mx-3 fs-4" style="color: #000000;"></i> </a></li>
+
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input type="search" class="form-control outline-secondary" placeholder="Search..." aria-label="Search">
+        </form>
+
+        <div class="dropdown text-end">
+          <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://static-cse.canva.com/blob/1395725/1600w-YmFtIRl8-qo.jpg" alt="mdo" width="40" height="40" class="rounded-circle">
+          </a>
+          <ul class="dropdown-menu text-small" style="">
+            <li><a class="dropdown-item" href="#">My playlists</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Sign out</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!--Qui finisce header e inizia il main-->
+  <main>
+
+    <!--Qui inizia la sezione hero-->
+    <div class="container my-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5 mt-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="https://i.etsystatic.com/33708229/r/il/2ac486/3744612339/il_fullxfull.3744612339_effs.jpg" class="d-block mx-lg-auto img-fluid rounded-4" alt="Bootstrap Themes" loading="lazy" style="box-shadow: 0px 0px 10px 0px; width:700px;" >
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-black lh-1 mb-3 ">Tutta la musica che ami, a portata di click</h1>
+          <p class="lead">Ascolta la musica che ami quando vuoi, dove vuoi, anche se sei offline. Scarica l'app di Music Hero.</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2"><a href="#subscriptions" class="link-light text-decoration-none">Subscribe now</a></button>
+            <button type="button" class="btn btn-outline-dark btn-lg px-4"><a href="login.html" target="_blank" class="link-dark text-decoration-none">Log in</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Qui finisce la sezione hero-->
+
+
+     <!--divisore numero 1-->
+  <div class="b-example-divider bg-light" style="height: 48px;"></div>
+  <div class="b-example-divider bg-light mb-2" style="height: 48px;"></div>
+
+    <!--Pagina numero 1 HOME-->
+    <div class="row" id="home">
+      <div class="col  d-flex justify-content-center my-3">
+        <div class="pricing-header p-3 pb-0 mx-auto text-center">
+          <h1 class="display-4 fw-bold text-black fs-1">Top 4 of the month</h1>
+          <p class="fs-5 text-black mb-5"> Segui ogni mese la classifica dei migliori album!! Ascolta ogni giorno i tuoi artisti preferiti!
+          </p>
+        </div>
+      </div>
+    </div>
+     
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-md-4 mb-sm-5">
+          <div class="card" style="width: 18rem;box-shadow: 0px 0px 10px 0px">
+            <img src="https://m.media-amazon.com/images/I/51QjJKy8S0L._AC_UF1000,1000_QL80_.jpg" class="card-img-top" alt="..."style="box-shadow: 0px 0px 1.5px 0px" >
+            <div class="card-body">
+              <h5 class="card-title">Blackpink in your area</h5>
+              <p class="card-text">Blackpink , 2018</p>
+              <a href="https://open.spotify.com/intl-it/album/4cpZazoKuj3jD6x2GrSX2w?autoplay=true" class="btn btn-primary" target="_blank">Go listen</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-sm-5">
+          <div class="card" style="width: 18rem;box-shadow: 0px 0px 10px 0px">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/7-64ecb1c909b78.png?crop=0.502xw:1.00xh;0.498xw,0&resize=1200:*" class="card-img-top" alt="..."style="box-shadow: 0px 0px 1.5px 0px" >
+            <div class="card-body">
+              <h5 class="card-title">1989</h5>
+              <p class="card-text">Taylor Swift , 2014</p>
+              <a href="https://open.spotify.com/intl-it/album/5fy0X0JmZRZnVa2UEicIOl?autoplay=true" class="btn btn-primary" target="_blank">Go listen</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 ">
+          <div class="card" style="width: 18rem;box-shadow: 0px 0px 10px 0px">
+            <img src="https://www.udiscovermusic.com/wp-content/uploads/2019/08/Taylor-Swift-Lover-album-cover-820.jpg" class="card-img-top" alt="..." style="box-shadow: 0px 0px 1.5px 0px">
+            <div class="card-body">
+              <h5 class="card-title">Lover</h5>
+              <p class="card-text">Taylor Swift , 2019</p>
+              <a href="https://open.spotify.com/intl-it/album/1NAmidJlEaVgA3MpcPFYGq?autoplay=true" class="btn btn-primary" target="_blank">Go listen</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card" style="width: 18rem ;box-shadow: 0px 0px 10px 0px">
+            <img src="https://ipurple.eu/950-large_default/bts-wings.jpg" class="card-img-top" alt="..." style="box-shadow: 0px 0px 1.5px 0px">
+            <div class="card-body">
+              <h5 class="card-title">Wings</h5>
+              <p class="card-text">BTS, 2016</p>
+              <a href="https://open.spotify.com/intl-it/album/1vhNGBTFoaSTLbHjPGFIlF?autoplay=true" class="btn btn-primary" target="_blank">Go listen</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <!--Divisore numero 2-->
+    <div class="b-example-divider bg-light" style="height: 48px;"></div>
+    <div class="b-example-divider bg-light mb-2" style="height: 48px;"></div>
+
+    <!--Pagina numero 2 ABOUT-->
+  
+    <div class="container">
+      <div class="row" id="about">
+        <div class="col  d-flex justify-content-center my-2">
+          <div class="pricing-header p-3 pb-0 mx-auto text-center">
+            <h1 class="display-4 fw-bold text-black fs-1 mb-4">About</h1>
+            <p class="fs-5 text-black"> Music Hero mette a disposizione tanti generi musicali diversi. Scegli il genere che ami, cerca l'artista che vuoi ascoltare <br>e crea una playlist per salvare le tue canzoni preferite.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 ps-5 my-5">
+          <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-2">
+            <div class="col" style="height: 350px;">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg d-flex justify-content-center align-items-center" style="background-image: url('https://mysoundescape.files.wordpress.com/2015/10/ep1.jpg'); background-position: center; background-size: cover;  ">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 ">
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-white">Indie Music</h3>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg d-flex justify-content-center align-items-center" style="background-image: url('https://runtheprompts.com/wp-content/uploads/2023/09/pop-album-cover-original.png');background-position: center; background-size: cover; ">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Pop Music</h3>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg d-flex justify-content-center align-items-center" style="background-image: url('https://media.istockphoto.com/id/1449836337/vector/vintage-styled-illustration-of-the-skull-with-rock-music-themed-tattoos-on-it-for-t-shirt.jpg?s=612x612&w=0&k=20&c=krVp4xjZV0yXMAwoUk-sCSXj_QJd77b2Yx8dESLKOu8=');background-position: center; background-size: cover;   ">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-light">Rock Music</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+  
+  
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    <!--Divisore numero 3-->
+    <div class="b-example-divider bg-light" style="height: 48px;"></div>
+    <div class="b-example-divider bg-light mb-2" style="height: 48px;"></div>
+
+    <!--Pagina numero 3 PRODOTTI-->
+    <div class="container">
+      <div class="row" id="products">
+      <div class="col  d-flex justify-content-center my-3">
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+          <h1 class="display-4 fw-bold text-black fs-1 mb-4">Products</h1>
+          <p class="fs-5 text-black">Quickly build an effective pricing table for your potential customers with this Bootstrap example. <br> It’s built with default Bootstrap components and utilities with little customization.</p>
+          <div class="d-flex gap-3 justify-content-center lead fw-normal">
+          <a class="icon-link mx-2 mb-3" href="#about">
+            Learn more
+          </a>
+          <a class="icon-link mx-2 mb-3" href="shop.html" target="_blank">
+            Buy
+          </a>
+         </div>
+         <img src="./assets/cuffie-removebg-preview.png" class="my-5 mx-5" style="width: 250px;">
+         <img src="./assets/cuffie_sony_1-removebg-preview.png" class="my-5 mx-5" style="width: 280px;">
+         <img src="./assets/cuffie_sony_2-removebg-preview.png" class="my-5 mx-3" style="width: 280px;">
+       
+        </div>
+      </div>
+    </div>
+   
+
+    
+    
+      <!--Divisore numero 4-->
+    <div class="b-example-divider bg-light" style="height: 48px;"></div>
+    <div class="b-example-divider bg-light mb-2" style="height: 48px;"></div>
+
+    <!--Pagina numero 4 PREZZI-->
+    <div class="container">
+      <div class="row" id="subscriptions">
+      <div class="col  d-flex justify-content-center my-3">
+        <div class="pricing-header p-3 pb-md-2 mx-auto text-center">
+          <h1 class="display-4 fw-bold text-black fs-1 mb-4">Pricing</h1>
+          <p class="fs-5 text-black">Quickly build an effective pricing table for your potential customers with this Bootstrap example. <br> It’s built with default Bootstrap components and utilities with little customization.</p>
+        </div>
+      </div>
+    </div>
+  
+      <div class="row">
+        <div class="col-12 my-2 ps-5">
+          <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                  <h4 class="my-0 fw-normal">Free</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>10 users included</li>
+                    <li>2 GB of storage</li>
+                    <li>Email support</li>
+                    <li>Help center access</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-outline-secondary">Sign up for free</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm ">
+                <div class="card-header py-3 bg-dark">
+                  <h4 class="my-0 fw-normal text-light">Pro</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/mo</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>20 users included</li>
+                    <li>10 GB of storage</li>
+                    <li>Priority email support</li>
+                    <li>Help center access</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-dark">Get started</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm border-secondary">
+                <div class="card-header py-3 text-bg-primary border-secondary">
+                  <h4 class="my-0 fw-normal">Enterprise</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">$29<small class="text-body-secondary fw-light">/mo</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>30 users included</li>
+                    <li>15 GB of storage</li>
+                    <li>Phone and email support</li>
+                    <li>Help center access</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-primary">Get Started</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+
+
+
+
+    </div>
+    
+  </main>
+
+  <!--Divisore numero 5-->
+  <div class="b-example-divider bg-light" style="height: 48px;"></div>
+  <div class="b-example-divider bg-light mb-2" style="height: 48px;"></div>
+
+
+  <!--Pagina numero 5 CONTATTI-->
+  <div class="container">
+    <div class="row" id="contacts">
+     <div class="col  d-flex justify-content-start my-2">
+       <div class="pricing-header pt-3 pb-0 text-start ps-0">
+         <h1 class="display-4 fw-bold text-black fs-1 pb-3">Contact us</h1>
+         <p class="fs-5 text-black">Se hai problemi con l'app o con il sito web, non esitare a contattarci. Puoi mandare una mail al nostro indirizzo di posta elettronica <br> o contattare il numero verde.
+         </p>
+       </div>
+     </div>
+ </div>
+   <div class="row">
+     <div class="col-6 my-2 ps-2 pb-5">
+       <h3>Indirizzo di posta elettronica:</h3>
+       <i class="fs-4 text-primary"><a href="mailto:MusicHero@gmail.com" class="link-primary text-decoration-none">MusicHero@gmail.com</a></i> 
+       <h3 class="mt-4">Numero verde:</h3>
+       <i class="fs-4 text-success">800.201.200</i>
+     </div>
+     <div class="col-6  my-5 d-flex flex-column">
+    
+     </div>
+     
+   </div>
+ </div>
+
+    <!--Divisore numero 6-->
+    <div class="b-example-divider bg-light" style="height: 48px;"></div>
+    <div class="b-example-divider bg-light mb-2" style="height: 48px;"></div>
+   
+
+
+  <!--Footer-->
+  <div class="container">
+<footer class="py-5 mx-5">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p>© 2024 Company, Inc. All rights reserved.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+        </ul>
+      </div>
+    </footer>
+
+
+  </div>
+    
+ 
+     
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/acd96ea700.js" crossorigin="anonymous"></script>
+</body>
+</html>
