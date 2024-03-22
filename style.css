@@ -43,6 +43,33 @@ html::-webkit-scrollbar-thumb {
   display: none;
 }
 
+.iconcine {
+  width:20px;
+}
+
+.center {
+  position:relative;
+  bottom:50px;
+}
+
+.menù {
+  top:48px;
+  left:18px;
+}
+
+.width-220px {
+  width:220px;
+}
+
+.dropdown-item:hover {
+  background-color:#1371ff !important;
+  color:white !important;
+}
+
+
+
+
+
 @media (max-width: 600px) {
   .flex {
     flex-direction: column;
@@ -123,6 +150,10 @@ html::-webkit-scrollbar-thumb {
   .left:first-child {
     top: -40px;
   }
+
+  .stretch {
+    align-items: stretch;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -148,6 +179,13 @@ html::-webkit-scrollbar-thumb {
     position: relative;
     left:40px;
  }
+
+ .stretch {
+  height:350px !important;
+ }
+
+
+ 
 
  
 }

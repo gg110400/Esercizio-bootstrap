@@ -54,18 +54,29 @@
 
     <!--Qui metto la nav con il titolo della pagina e menù hamburger che si vedono solo su schermo medium e small-->
     <nav class="bg-light w-100">
-      <div>
-        <i class="fa-solid fa-bars ps-4 fs-2"></i>
+      <div> 
+        <i onclick="apriMenu()" class="fa-solid fa-bars ps-4 fs-2"></i> <!--Questa è l'icona del menù-->
       </div>
       <div >
          <h1>Music Hero<i class="fa-solid fa-volume-high ps-2 text-black" style="color: #ffffff;"></i></h1>
       </div>
       <div>
-        <i class="fa-solid fa-user pe-3 fs-2"></i>
+        <i class="fa-solid fa-user pe-5 fs-2"></i> <!--Questa è l'icona del profilo utente-->
       </div>
            
     </nav>
-      
+
+    <!--Qui metto il dropdown menù che si vede solo se clicchi su hambuerger menù-->
+    <div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center d-none">
+      <ul class="dropdown-menu position-absolute menù d-grid gap-1 p-2 rounded-2 mx-0 shadow w-220px bg-light " data-bs-theme="light">
+        <li><a class="dropdown-item rounded-2 " href="#home">Home</a></li>
+        <li><a class="dropdown-item rounded-2" href="#subscriptions">Subscription</a></li>
+        <li><a class="dropdown-item rounded-2" href="shop.html" target="_blank">Shop</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item rounded-2" href="login.html" target="_blank">Start listening</a></li>
+      </ul>
+    </div>
+    <!--Qui finisce il dropdown menù-->
 
     <!--Qui metto il carosello che si vede solo su schermo small e medium-->
     <div class="container-fluid p-0" id="carosello">
@@ -125,7 +136,7 @@
     <div class="row" id="home">
       <div class="col  d-flex justify-content-center my-3">
         <div class="pricing-header p-3 pb-0 mx-auto text-center">
-          <h1 class="display-4 fw-bold text-black fs-1 mb-sm-4">Top 4 of the month</h1>
+          <h1 class="display-4 fw-bold text-black fs-1 mb-sm-4">Top 4 of the month <i class="fa-solid fa-ranking-star ps-2"></i></h1>
           <p class="fs-5 text-black mb-5"> Segui ogni mese la classifica dei migliori album!! Ascolta ogni giorno i tuoi artisti preferiti!
           </p>
         </div>
@@ -200,25 +211,25 @@
         <div class="col-12 ps-5 my-5">
           <div class="row row-cols-1 row-cols-lg-3  g-4 py-2">
             <div class="col"">
-              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg d-flex justify-content-center align-items-center left" style="background-image: url('https://mysoundescape.files.wordpress.com/2015/10/ep1.jpg'); background-position: center; background-size: cover;  ">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg d-flex justify-content-center align-items-center left">
                 <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 ">
-                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-white">Indie Music</h3>
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-white center">Indie Music<i class="fa-solid fa-drum ps-2"></i> </h3>
                 </div>
               </div>
             </div>
       
             <div class="col">
-              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg d-flex justify-content-center align-items-center left" style="background-image: url('https://runtheprompts.com/wp-content/uploads/2023/09/pop-album-cover-original.png');background-position: center; background-size: cover; ">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg d-flex justify-content-center align-items-center left" >
                 <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Pop Music</h3>
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold center">Pop Music<i class="fa-solid fa-star ps-2"></i> </h3>
                 </div>
               </div>
             </div>
       
             <div class="col">
-              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg d-flex justify-content-center align-items-center left" style="background-image: url('https://media.istockphoto.com/id/1449836337/vector/vintage-styled-illustration-of-the-skull-with-rock-music-themed-tattoos-on-it-for-t-shirt.jpg?s=612x612&w=0&k=20&c=krVp4xjZV0yXMAwoUk-sCSXj_QJd77b2Yx8dESLKOu8=');background-position: center; background-size: cover;   ">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg d-flex justify-content-center align-items-center left">
                 <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-light">Rock Music</h3>
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold text-light center">Rock Music<i class="fa-solid fa-guitar ps-2"></i></h3>
                 </div>
               </div>
             </div>
@@ -242,7 +253,7 @@
       <div class="col  d-flex justify-content-center my-3">
         <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
           <h1 class="display-4 fw-bold text-black fs-1 mb-4">Products</h1>
-          <p class="fs-5 text-black">Quickly build an effective pricing table for your potential customers with this Bootstrap example. <br> It’s built with default Bootstrap components and utilities with little customization.</p>
+          <p class="fs-5 text-black">Ascolta la tua musica preferita con le nostre cuffie bluethooth con tecnologia di ultima generazione. </p>
           <div class="d-flex gap-3 justify-content-center lead fw-normal">
           <a class="icon-link mx-2 mb-3" href="#about">
             Learn more
@@ -280,7 +291,7 @@
   
       <div class="row">
         <div class="col-12 my-2 ps-5">
-          <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+          <div class="row row-cols-1 row-cols-md-3 mb-3 text-center d-flex flex-row">
             <div class="col">
               <div class="card mb-4 rounded-3 shadow-sm left">
                 <div class="card-header py-3">
@@ -289,44 +300,44 @@
                 <div class="card-body">
                   <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
                   <ul class="list-unstyled mt-3 mb-4">
-                    <li>10 users included</li>
-                    <li>2 GB of storage</li>
-                    <li>Email support</li>
-                    <li>Help center access</li>
+                    <li>10 users included <img class="iconcine"   src="./assets/icons8-pulsante-segno-di-spunta-emoji-48.png"alt=spunta> </li>
+                    <li>2 GB of storage <img class="iconcine"   src="./assets/icons8-pulsante-segno-di-spunta-emoji-48.png"alt=spunta> </li>
+                    <li>Email support <img class="iconcine"  src="./assets/icons8-pulsante-segno-di-spunta-emoji-48.png"alt=spunta> </li>
+                    <li>Help center access <img class="iconcine"   src="./assets/icons8-croce-segno-pulsante-emoji-48.png"alt=croce>  </li>
                   </ul>
                   <button type="button" class="w-100 btn btn-lg btn-outline-secondary">Sign up for free</button>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card mb-4 rounded-3 shadow-sm left">
-                <div class="card-header py-3 bg-dark">
+              <div class="card mb-4 rounded-3 shadow-sm left stretch">
+                <div class="card-header py-3 bg-dark  ">
                   <h4 class="my-0 fw-normal text-light">Pro</h4>
                 </div>
                 <div class="card-body">
                   <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/mo</small></h1>
                   <ul class="list-unstyled mt-3 mb-4">
-                    <li>20 users included</li>
-                    <li>10 GB of storage</li>
-                    <li>Priority email support</li>
-                    <li>Help center access</li>
+                    <li>20 users included <img class="iconcine" src="./assets/icons8-pulsante-segno-di-spunta-emoji-48.png"alt=spunta> </li>
+                    <li>10 GB of storage <img class="iconcine" src="./assets/icons8-pulsante-segno-di-spunta-emoji-48.png"alt=spunta> </li>
+                    <li>Priority email support <img class="iconcine" src="./assets/icons8-pulsante-segno-di-spunta-emoji-48.png"alt=spunta> </li>
+                    <li>Help center access  <img class="iconcine" src="./assets/icons8-pulsante-segno-di-spunta-emoji-48.png"alt=spunta> </li>
                   </ul>
                   <button type="button" class="w-100 btn btn-lg btn-dark">Get started</button>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card mb-4 rounded-3 shadow-sm border-secondary left">
-                <div class="card-header py-3 text-bg-primary border-secondary">
+              <div class="card mb-4 rounded-3 shadow-sm  left">
+                <div class="card-header py-3 text-bg-primary">
                   <h4 class="my-0 fw-normal">Enterprise</h4>
                 </div>
                 <div class="card-body">
                   <h1 class="card-title pricing-card-title">$29<small class="text-body-secondary fw-light">/mo</small></h1>
                   <ul class="list-unstyled mt-3 mb-4">
-                    <li>30 users included</li>
-                    <li>15 GB of storage</li>
-                    <li>Phone and email support</li>
-                    <li>Help center access</li>
+                    <li>30 users included <img class="iconcine" src="./assets/icons8-pulsante-segno-di-spunta-emoji-48.png"alt=spunta>  </li>
+                    <li>15 GB of storage <img class="iconcine" src="./assets/icons8-pulsante-segno-di-spunta-emoji-48.png"alt=spunta>  </li>
+                    <li>Phone and email support <img class="iconcine" src="./assets/icons8-pulsante-segno-di-spunta-emoji-48.png"alt=spunta>  </li>
+                    <li>Help center access <img class="iconcine" src="./assets/icons8-pulsante-segno-di-spunta-emoji-48.png"alt=spunta>  </li>
                   </ul>
                   <button type="button" class="w-100 btn btn-lg btn-primary">Get Started</button>
                 </div>
@@ -355,7 +366,7 @@
     <div class="row" id="contacts">
      <div class="col  d-flex justify-content-start  mx-5">
        <div class="pricing-header pt-3 pb-0  ps-0 ">
-         <h1 class="display-4 fw-bold text-black fs-1 pb-3 text-center">Contact us</h1>
+         <h1 class="display-4 fw-bold text-black fs-1 pb-3 text-center">Contact us <img class="ps-2 " src="./assets/icons8-messaggio-50.png" alt="lettera" style="width:40px"></h1>
          <p class="fs-5 text-black text-sm-left text-md-left">Se hai problemi con l'app o con il sito web, non esitare a contattarci. Puoi mandare una mail al nostro indirizzo di posta elettronica <br> o contattare il numero verde.
          </p>
        </div>
@@ -365,11 +376,15 @@
      <div class="col-lg-6 col-md-12 col-sm-12 my-2 ps-2 pb-5  mx-5 ">
       <div>
          <h3>Indirizzo di posta elettronica:</h3>
-       <i class="fs-4 text-primary"><a href="mailto:MusicHero@gmail.com" class="link-primary text-decoration-none">MusicHero@gmail.com</a></i> 
+       <i class="fs-4 text-primary"><a href="mailto:MusicHero@gmail.com" class="link-primary link-underline-primary  ">MusicHero@gmail.com</a></i> 
       </div>
        <div>
          <h3 class="mt-4">Numero verde:</h3>
-       <i class="fs-4 text-success">800.201.200</i>
+       <i class="fs-4 text-primary ">800.201.200</i>
+       </div>
+       <div class="my-4">
+        <h3>Indirizzo:</h3>
+        <i class="fs-4 text-primary ">Via dei Catinari 112</i>
        </div>
       
      </div>
@@ -453,5 +468,17 @@
      
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
       <script src="https://kit.fontawesome.com/acd96ea700.js" crossorigin="anonymous"></script>
+      <script>
+      let menu = document.getElementsByClassName("d-none")[0];
+      function apriMenu() {
+        if (menu.classList.contains("d-none")) {
+          menu.classList.remove("d-none");
+          menu.classList.add("d-block");
+        } else {
+          menu.classList.remove("d-block");
+          menu.classList.add("d-none");
+        }
+      }
+      </script>
 </body>
 </html>
