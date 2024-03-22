@@ -138,11 +138,32 @@ html::-webkit-scrollbar-thumb {
   .hero {
     display: none;
   }
+
+ .flex {
+    flex-direction: row;
+    gap:100px;
+ }
+
+ .position {
+    position: relative;
+    left:40px;
+ }
+
+ 
 }
 
 @media (min-width: 992px) and (max-width: 1460px) {
   header {
     display: none;
+  }
+
+  .flex {
+    flex-direction: row;
+    gap:80px;
+  }
+
+  .card {
+    width:17rem !important;
   }
 }
 
